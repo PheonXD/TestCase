@@ -15,13 +15,13 @@ namespace TestCase
             {
                 Console.WriteLine("Введите кол-во цифр");
                 var countOfNumber = Console.ReadLine();
-                Start(Convert.ToInt32(countOfNumber));
+                start(Convert.ToInt32(countOfNumber));
             }
         }
 
-        static void Start(int countOfNumber)
+        static void start(int countOfNumber)
         {
-            var rank = (countOfNumber / 2) * 9 / 2;
+            var rank = (countOfNumber / 2) * 12 / 2;
             for (int i = 0; i <= rank; i++)
             {
                 if (i == 0) summ = 1;
@@ -30,6 +30,7 @@ namespace TestCase
             }
             Console.WriteLine("кол-во красивых чисел: " + (summ * 2).ToString());
         }
+
 
         static long getSumOfСombinations(int rank)
         {
